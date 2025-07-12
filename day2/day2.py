@@ -23,36 +23,6 @@ with open("day2/input2.txt", "r") as file:
         line = file.readline()
         arr = [int(num) for num in line.split()]
         if not line: # Check for EOF (empty string)
-            break
-        # Process the line here
-        # if (arr[0] > arr[1]):
-        #     dir = "down"
-        # elif (arr[0] < arr[1]):
-        #     dir = "up"
-        # elif (arr[0] == arr[1]):
-        #     if(arr[1] == arr[2]):
-        #         dir = "invalid"
-        #     elif (arr[1] > arr[2]):
-        #         dir = "down"
-        #     elif (arr[1] < arr[2]):
-        #         dir = "up"
-    
-        # if (dir != "invalid"):
-        #     for i in range(len(arr)-1):
-        #         diff = arr[i+1] - arr[i]
-                
-        #         if (dir == "up" and (diff > 3 or diff <= 0)):
-        #             break
-        #         elif(dir == "down" and (diff < -3 or diff >= 0)):
-        #             break
-        #         if (errors > 1):
-        #             break
-        #         if (i == (len(arr)-2)):
-        #             print(arr)
-        #             count += 1
-        if(check_list(arr)):
-            count+=1
-        else:
             for i in range(len(arr)):
                 tmp = arr.pop(i)
                 print(arr)
