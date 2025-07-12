@@ -19,19 +19,14 @@ def check_list(arr):
 count = 0
 with open("day2/input2.txt", "r") as file:
     while True:
-        errors = 0
         line = file.readline()
         arr = [int(num) for num in line.split()]
         if not line: # Check for EOF (empty string)
             for i in range(len(arr)):
                 tmp = arr.pop(i)
-                print(arr)
                 if(check_list(arr)):
                     count+=1
                     break
                 arr.insert(i, tmp)
-                print(arr)
-
-        
+  
 print(count)
-
