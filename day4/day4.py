@@ -71,7 +71,6 @@ for i in range(SIZE-1,2,-1):
         print(test_string)
         count += test_string.count("XMAS")
 
-#10
 for i in range(SIZE-3):
     print(i)
 print(count)
